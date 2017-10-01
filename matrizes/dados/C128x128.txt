@@ -1,0 +1,4 @@
+Tempo médio em segundos: 0.0171188
+Menor tempo: 0.015593
+Maior tempo: 0.02206
+Desvio Padrão: 0.00382788
