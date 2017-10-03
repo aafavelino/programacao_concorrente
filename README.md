@@ -6,7 +6,6 @@ O objetivo deste trabalho é verificar se é válido ou não o senso comum d
 
 
 **"Não furtarás."**
-
 (Êxodo 20:15)
 
 **Compilação**
