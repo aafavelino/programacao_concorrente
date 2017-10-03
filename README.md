@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-O objetivo deste trabalho é verificar se é válido ou não o senso comum de que programas concorrentes apresentam um melhor desempenho com relação a tempo de execução quando comparados a suas respectivas versões sequenciais. Para tal, serão implementadas as versões sequencial e concor- rente de um algoritmo e realizados testes para diferentes cargas (workloads). Através da análise dos resultados em termos de tempo de execução registrado em cada um dos testes,será possível concluir acerca da hipó́tese inicialmente dada.
+O objetivo deste trabalho é verificar se é válido ou não o senso comum de que programas concorrentes apresentam um melhor desempenho com relação a tempo de execução quando comparados a suas respectivas versões sequenciais. Para tal, serão implementadas as versões sequencial e concorrente de um algoritmo e realizados testes para diferentes cargas (workloads). Através da análise dos resultados em termos de tempo de execução registrado em cada um dos testes,será possível concluir acerca da hipó́tese inicialmente dada.
 
 
 "Não furtarás." 
