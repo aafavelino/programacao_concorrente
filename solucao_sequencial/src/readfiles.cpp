@@ -1,9 +1,9 @@
 #include "readfiles.h"
 
-Readfiles::Readfiles(string argumento) {
+Readfiles::Readfiles(string argumento, string arquivoA, string arquivoB) {
 	this->argumento = argumento;
-	this->fileA.open("../matrizes/A"+argumento+"x"+argumento+".txt");
-	this->fileB.open("../matrizes/B"+argumento+"x"+argumento+".txt");
+	this->fileA.open(arquivoA);
+	this->fileB.open(arquivoB);
 
 
 	this->vetorA = new int[std::stoi(argumento) * std::stoi(argumento)];
@@ -70,7 +70,7 @@ void Readfiles::lerMatrizes() {
 void Readfiles::escreverMatriz(std::vector< vector<int> > C)
 {
 	
-	std::ofstream fileC ("../matrizes/C"+argumento+"x"+argumento+".txt");	
+	std::ofstream fileC ("../matrizes/resultados da sequencial/C"+argumento+"x"+argumento+".txt");	
 	if (fileC.is_open())
 	{
 		fileC << argumento << " " << argumento <<"\n";
@@ -95,7 +95,7 @@ void Readfiles::escreverMatriz(std::vector< vector<int> > C)
 
 void Readfiles::escreverDadosEstatisticos(long double tempo_medio,double maior_tempo, double menor_tempo, double desvio_padrao)
 {
-	std::ofstream dados ("../matrizes/dados/C"+argumento+"x"+argumento+".txt");	
+	std::ofstream dados ("../matrizes/dados/dados_sequencial/C"+argumento+"x"+argumento+".txt");	
 	if (dados.is_open())
 	{
 		dados << "Tempo médio em segundos: " << tempo_medio << "\n";

@@ -15,11 +15,13 @@ public:
 	std::ifstream fileA;
 	std::ifstream fileB;
 	string argumento;
+	string arquivoA;
+	string arquivoB;
 
 	int* vetorA;
 	int* vetorB;
 
-	Readfiles(string argumento);
+	Readfiles(string argumento, string arquivoA, string arquivoB);
 	~Readfiles();
 
 	void lerMatrizes();

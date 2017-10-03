@@ -7,13 +7,14 @@ using namespace std;
 
 
 
+
 int main(int argc, char const *argv[])
 {
 	// Argumento em linha de comando...
-    if (argc != 2)
+    if (argc != 4)
     {
-        cout << "Voce esqueceu de digitar o tamanho da matriz" << endl;
-        system("pause");
+        cout << "Parâmetro incorreto!!!" << endl << endl;
+        cout << "tente $ ./multimat_concorrente 2 caminhoA caminhoB" << endl << endl;
         exit(1);
     }
     // Passando o Tamanho das matrizes
@@ -37,7 +38,7 @@ int main(int argc, char const *argv[])
 	unsigned long long int nanosegundos_decorridos_vetor[21]; // Vetor de clocks
     
     //Definindo leitura de arquivos...
-    Readfiles *files = new Readfiles(argv[1]);
+    Readfiles *files = new Readfiles(argv[1], argv[2], argv[3]);
     //Lendo os arquivos de matrizes e armazenando num vetor
     files->lerMatrizes();
 
@@ -65,7 +66,6 @@ int main(int argc, char const *argv[])
 		aux+=size[0];
 		
 	}
-
 
 
 
