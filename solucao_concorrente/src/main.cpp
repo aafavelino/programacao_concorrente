@@ -1,3 +1,14 @@
+/*!
+ *  @mainpage Análise Empírica de multiplicação de Matrizes
+ *  @author Adelino Afonso Fernandes Avelino
+ *  @date outubro, 2017
+ *  @version 1.0
+ *
+ *  @file main.cpp
+ *  @brief Arquivo Main
+ *
+ *  Arquivo com o método Main onde são feitas todas as análises
+ */
 #include <iostream>
 #include <thread>
 #include "readfiles.h"
@@ -6,6 +17,11 @@
 
 using namespace std;
 
+/**
+ * @brief Main 
+ *
+ * Teste feito para comprovar eficiencia da solução concorrente desenvolvida
+ */
 int main(int argc, char const *argv[])
 {
 	// Argumento em linha de comando...
@@ -125,6 +141,7 @@ int main(int argc, char const *argv[])
  	files->escreverMatriz(C);
  	//ESCREVENDO DADOS ESTATISTICOS
  	files->escreverDadosEstatisticos(media,maior_tempo,menor_tempo,desvio_padrao);
+ 	//Limpando a mem
  	A.clear();
  	B.clear();
  	C.clear();

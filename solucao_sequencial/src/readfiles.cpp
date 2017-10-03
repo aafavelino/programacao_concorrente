@@ -1,3 +1,9 @@
+/*!
+ *  @file readfiles.cpp
+ *  @brief Implementação da Classe Readfiles
+ *
+ *  Arquivo com a construção das funções da classe Readfiles
+ */
 #include "readfiles.h"
 
 Readfiles::Readfiles(string argumento, string arquivoA, string arquivoB) {
