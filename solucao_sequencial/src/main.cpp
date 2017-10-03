@@ -123,8 +123,6 @@ int main(int argc, char const *argv[])
 	maior_tempo = maior_tempo/1000000000;
 
 
-
-
 	//CALCULO DO DESVIO PADRAO
 	for (int i = 1; i <= 20; ++i)
 	{
